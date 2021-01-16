@@ -11,10 +11,9 @@ header {
     padding: 10px;
 }
 .head-name {
-    color: rgb(72, 72, 236);
+    margin: 20px 0;
+    border-radius: 10px;
     text-align: center;
-    font-size: 500%;
-    font-family: 'Courier New', Courier, monospace;
 }
 .tools {
     text-decoration: none;
