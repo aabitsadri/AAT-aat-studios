@@ -1,0 +1,27 @@
+.main-item {
+    position: relative;
+    overflow: hidden;
+}
+.main-item img{
+    display: block;
+    transition: all 1.7s;
+}
+.main-item:hover img {
+    transform: scale(1.5);
+}
+.abdun-description {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.45);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateY(100%);
+}
+.main-item:hover .abdun-description {
+    opacity: 1;
+    transform: translateY(0%);
+}

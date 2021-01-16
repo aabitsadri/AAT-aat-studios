@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/aat-logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url(imgs/abg.jpeg);
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            max-width: auto;
+            background-color: rgb(48, 44, 44);
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button {
+            margin: 10px;
+            padding: 7px;
+            background-color: rgb(52, 52, 201);
+            border: 2px solid white;
+            border-radius: 7px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button:hover,
+        a:hover {
+            color: rgb(52, 52, 201);
+            background-color: white;
+        }
+
+        button:hover {
+            border: 2px solid rgb(52, 52, 201);
+        }
+
+        .prof-pic {
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .container {
+            padding: 30px;
+            margin: 25px;
+            background-color: rgb(48, 44, 44);
+            border-radius: 50px;
+        }
+
+        .texticon {
+            color: white;
+            margin-left: 10px;
+        }
+
+        i {
+            margin-bottom: 50px;
+        }
+
+        .profile-slogan {
+            color: aliceblue;
+            font-family: cursive;
+        }
+        .header img {
+            display: block;
+            transition: all 1.7s;
+        }
+
+        .header:hover img {
+            transform: scale(1.5);
+        }
+
+        .abdun-description {
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 575px;
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 1s;
+            transform: translateY(100%);
+        }
+
+        .header:hover .abdun-description {
+            opacity: 1;
+            transform: translateY(0%); 
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                margin: 10px;
+                margin-top: 50px;
+                padding: 15px;
+            }
+
+            .texticon {
+                font-size: 70%;
+            }
+
+            i {
+                margin-bottom: 30px;
+                margin-left: 10px;
+            }
+            .abdun-description {
+                left: 90px;
+            }
+        }
+    </style>
+
+    <header class="header">
+        <img src="imgs/prof-pic.jpeg" width="200" height="225" class="prof-pic">
+        <div class="abdun-description">
+            <h1 class="profile-slogan">AAT studios</h1>
+        </div>
+    </header>
+    <button><a href="index .html">Home</a></button>
+    <div class="container">
+        <i class="fa fa-camera" style="font-size:48px;color:red"> <span class="texticon">Photographer</span></i><br>
+        <i class='fas fa-palette' style='font-size:48px;color:red'><span class="texticon">Graphic
+                Designer</span></i><br>
+        <a href="https://www.instagram.com/aabitsadri/"><i class="fa fa-instagram"
+                style="font-size:48px;color:red"><span class="texticon">Follow Me</span></i></a>
+    </div>
+</body>
+
+</html>
